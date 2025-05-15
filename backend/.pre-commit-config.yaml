@@ -1,5 +1,5 @@
 default_language_version:
-  python: python3.10
+  python: python3.13
 
 exclude: >
   (\.eggs|\.git|\.hg|\.mypy_cache|\.idea|\.pytest_cache|\.tox|\.venv|venv|\.env|env|\.vscode|
@@ -7,7 +7,7 @@ exclude: >
 
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.11.8
+    rev: v0.11.9
     hooks:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
@@ -16,7 +16,7 @@ repos:
     rev: 25.1.0
     hooks:
       - id: black
-        language_version: python3.10
+        language_version: python3.13
         additional_dependencies: []
         args: [--fast]
 
